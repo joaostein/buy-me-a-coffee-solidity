@@ -1,13 +1,12 @@
-# Sample Hardhat Project
+# Buy me a coffee contract
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
-
-Try running some of the following tasks:
-
-```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat run scripts/deploy.js
-```
+## Spec:
+- The contract must store the payable owner address
+- The contract must prevent a user from sending zero ETH tip
+- The contract owner can withdraw the tips from the contract balance
+- A user can send ETH to the contract owner (aka "buy me a coffee")
+- The contract must create a memo when a tip is sent
+  - Memo params: sender address, block timestamp, sender name, custom message
+  - The contract must emit a new memo event when a memo is created
+  - The contract must store a list with all the memos
+- A user can fetch all the memos
