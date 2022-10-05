@@ -12,4 +12,8 @@ describe('BuyMeACoffee', function () {
   it('should exist', () => {
     expect(buyMeACoffee).to.exist;
   });
+
+  it('should store the contract owner addres', async () => {
+    expect(await buyMeACoffee.owner()).to.equal(owner.address);
+  });
 });
