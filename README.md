@@ -11,3 +11,6 @@
 - The contract must create a memo when a tip is received
 - The contract must emit a new memo event when a memo is created
 - The contract owner can withdraw the tips from the contract balance
+
+### Reference:
+https://docs.alchemy.com/docs/how-to-build-buy-me-a-coffee-defi-dapp
